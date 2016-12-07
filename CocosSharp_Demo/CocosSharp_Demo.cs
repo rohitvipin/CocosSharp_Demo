@@ -1,6 +1,4 @@
-﻿using System;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace CocosSharp_Demo
 {
@@ -9,22 +7,22 @@ namespace CocosSharp_Demo
         public App()
         {
             // The root page of your application
-            var content = new ContentPage
-            {
-                Title = "CocosSharp_Demo",
-                Content = new StackLayout
-                {
-                    VerticalOptions = LayoutOptions.Center,
-                    Children = {
-                        new Label {
-                            HorizontalTextAlignment = TextAlignment.Center,
-                            Text = "Welcome to Xamarin Forms!"
-                        }
-                    }
-                }
-            };
+            //MainPage = new NavigationPage(new ContentPage
+            //{
+            //    Title = "CocosSharp_Demo",
+            //    Content = new StackLayout
+            //    {
+            //        VerticalOptions = LayoutOptions.Center,
+            //        Children = {
+            //            new Label {
+            //                HorizontalTextAlignment = TextAlignment.Center,
+            //                Text = "Welcome to Xamarin Forms!"
+            //            }
+            //        }
+            //    }
+            //});
 
-            MainPage = new NavigationPage(content);
+            MainPage = new GameView();
         }
 
         protected override void OnStart()

@@ -1,36 +1,32 @@
-﻿using System;
+﻿using CocosSharp;
+
 namespace CocosSharp_Demo
-{public class GameScene : CCScene
+{
+    public class GameScene : CCScene
     {
-        CCDrawNode circle;
+        private readonly CCDrawNode _circle;
 
-        public GameScene (CCGameView gameView) : base(gameView)
+        public GameScene(CCGameView gameView) : base(gameView)
         {
-            var layer = new CCLayer ();
-            this.AddLayer (layer);
+            var layer = new CCLayer();
+            AddLayer(layer);
 
-            circle = new CCDrawNode ();
-            layer.AddChild (circle);
+            _circle = new CCDrawNode();
+            layer.AddChild(_circle);
 
-            circle.DrawCircle (
+            _circle.DrawCircle(
                 // The center to use when drawing the circle,
                 // relative to the CCDrawNode:
-                new CCPoint (0, 0),
-                radius:15, 
-                color:CCColor4B.White);
+                new CCPoint(0, 0),
+                radius: 15,
+                color: CCColor4B.White);
 
-            circle.PositionX = 20;
-            circle.PositionY = 50;
-        }
-                
-        public void MoveCircleLeft()
-        {
-            circle.PositionX -= 10;
+            _circle.PositionX = 20;
+            _circle.PositionY = 50;
         }
 
-        public void MoveCircleRight()
-        {
-            circle.PositionX += 10;
-        }
+        public void MoveCircleLeft() => _circle.PositionX -= 10;
+
+        public void MoveCircleRight() => _circle.PositionX += 10;
     }
 }
