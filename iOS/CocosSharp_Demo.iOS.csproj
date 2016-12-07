@@ -101,6 +101,24 @@
     <Reference Include="Xamarin.Forms.Xaml">
       <HintPath>..\packages\Xamarin.Forms.2.3.1.114\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
     </Reference>
+    <Reference Include="box2d">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\box2d.dll</HintPath>
+    </Reference>
+    <Reference Include="CocosSharp">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\CocosSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoGame.Framework.Net">
+      <HintPath>..\packages\CocosSharp.1.7.1.0\lib\Xamarin.iOS10\MonoGame.Framework.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="CocosSharp.Forms">
+      <HintPath>..\packages\CocosSharp.Forms.1.7.1.0\lib\Xamarin.iOS10\CocosSharp.Forms.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CocosSharp_Demo\CocosSharp_Demo.csproj">
